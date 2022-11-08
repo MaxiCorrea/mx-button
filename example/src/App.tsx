@@ -1,10 +1,8 @@
-import React from 'react'
-
-import { ExampleComponent } from 'mx-button'
-import 'mx-button/dist/index.css'
+import * as React from "react";
+import { MxButton } from 'mx-button'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <MxButton label={""}/>
 }
 
 export default App

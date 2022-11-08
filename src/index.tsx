@@ -1,10 +1,19 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import { Button as MuiButton, ButtonProps } from '@material-ui/core'
 
-interface Props {
-  text: string
+/**
+ *
+ */
+interface MxButtonProps extends ButtonProps {
+  /** Caption text of button */
+  readonly label?: string
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+/**
+ *
+ * @param props
+ * @returns
+ */
+export const MxButton: React.VFC<MxButtonProps> = (props) => {
+  return <MuiButton {...props}>{props.label ? `${props.label}` : ''}</MuiButton>
 }
