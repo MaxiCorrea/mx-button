@@ -13,16 +13,14 @@ npm install --save mx-button
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import * as React from "react";
+import { MxButton } from 'mx-button'
 
-import MyComponent from 'mx-button'
-import 'mx-button/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return <MxButton label={"Mx Button"}/>
 }
+
+export default App
 ```
 
 ## License
