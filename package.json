@@ -1,10 +1,13 @@
 {
-  "name": "mx-button",
+  "name": "@maxicorrea/mx-button",
   "version": "1.0.0",
   "description": "React MxButton Component",
   "author": "MaxiCorrea",
   "license": "MIT",
-  "repository": "MaxiCorrea/mx-button",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxiCorrea/mx-button.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -57,6 +60,9 @@
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
     "typescript": "^3.7.5"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "dist"
