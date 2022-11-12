@@ -8,13 +8,13 @@ const App = () => {
         style={{
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center' 
         }}
       >
         <span style={{width : "100px"}}>Primary</span>
-        <MxButton label={'Mx Button small'} variant='primary' size='small'/>
-        <MxButton label={'Mx Button medium'} variant='primary' size='medium'/>
-        <MxButton label={'Mx Button large'} variant='primary' size='large'/>
+        <MxButton label={'Button'} variant='primary' size='small'/>
+        <MxButton label={'Button'} variant='primary' size='medium'/>
+        <MxButton label={'Button'} variant='primary' size='large'/>
       </div>
 
       <div
@@ -25,9 +25,9 @@ const App = () => {
         }}
       >
         <span style={{width : "100px"}}>Secundary</span>
-        <MxButton label={'Mx Button small'} variant='secundary' size='small'/>
-        <MxButton label={'Mx Button medium'} variant='secundary' size='medium'/>
-        <MxButton label={'Mx Button large'} variant='secundary' size='large'/>
+        <MxButton label={'Button'} variant='secondary' size='small'/>
+        <MxButton label={'Button'} variant='secondary' size='medium'/>
+        <MxButton label={'Button'} variant='secondary' size='large'/>
       </div>
 
       <div
