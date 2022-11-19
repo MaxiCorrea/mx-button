@@ -38,9 +38,9 @@ const App = () => {
         }}
       >
         <span style={{width : "100px"}}>Outlined</span>
-        <MxButton label={'Mx Button small'} variant='outlined' size='small'/>
-        <MxButton label={'Mx Button medium'} variant='outlined' size='medium'/>
-        <MxButton label={'Mx Button large'} variant='outlined' size='large'/>
+        <MxButton label={'Button'} variant='outlined' size='small'/>
+        <MxButton label={'Button'} variant='outlined' size='medium'/>
+        <MxButton label={'Button'} variant='outlined' size='large'/>
       </div>
 
       <div
@@ -51,9 +51,9 @@ const App = () => {
         }}
       >
         <span style={{width : "100px"}}>Text</span>
-        <MxButton label={'Mx Button small'} variant='text' size='small'/>
-        <MxButton label={'Mx Button medium'} variant='text' size='medium'/>
-        <MxButton label={'Mx Button large'} variant='text' size='large'/>
+        <MxButton label={'Button'} variant='text' size='small'/>
+        <MxButton label={'Button'} variant='text' size='medium'/>
+        <MxButton label={'Button'} variant='text' size='large'/>
       </div>
 
       <div

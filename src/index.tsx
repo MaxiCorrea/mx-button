@@ -41,6 +41,13 @@ const useMxButtonStyles = makeStyles<Theme>(() =>
         background : "#DECFFB" 
       }
     },
+    outlinedPrimary : {
+      background: "#E9DFFC",
+      border: "1px solid #784DC7",
+      "&:hover": {
+        background: "#DECFFB"
+      }
+    },
     sizeSmall : {
       fontSize : "12px",
       padding: "8px 16px",
@@ -110,6 +117,43 @@ export const MxButton: React.VFC<MxButtonProps> = (props) => {
         sizeSmall : props.size === "small" ? classes.sizeSmall : undefined,
         contained : classes.contained,
         containedSecondary: classes.containedSecondary,
+        label : classes.label
+      }}
+    >
+      {props.label ? `${props.label}` : ''}
+    </MuiButton>
+  )
+ } 
+
+ if(props.variant === "outlined") {
+  return (
+    <MuiButton
+      variant='outlined'
+      color='primary'
+      size={props.size}
+      classes={{
+        root: classes.rootDefault,
+        sizeLarge : props.size === "large" ? classes.sizeLarge : undefined ,
+        sizeSmall : props.size === "small" ? classes.sizeSmall : undefined,
+        outlinedPrimary: classes.outlinedPrimary,
+        label : classes.label
+      }}
+    >
+      {props.label ? `${props.label}` : ''}
+    </MuiButton>
+  )
+ } 
+
+ if(props.variant === "text") {
+  return (
+    <MuiButton
+      variant='text'
+      color='primary'
+      size={props.size}
+      classes={{
+        root: classes.rootDefault,
+        sizeLarge : props.size === "large" ? classes.sizeLarge : undefined ,
+        sizeSmall : props.size === "small" ? classes.sizeSmall : undefined,
         label : classes.label
       }}
     >
