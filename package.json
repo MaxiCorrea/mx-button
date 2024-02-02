@@ -1,6 +1,6 @@
 {
   "name": "@maxicorrea/mx-button",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React MxButton Component",
   "author": {
     "name": "MaxiCorrea"
@@ -27,8 +27,7 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_f14d021c9e409d2"
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.10.2",
