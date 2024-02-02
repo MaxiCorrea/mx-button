@@ -2,7 +2,9 @@
   "name": "@maxicorrea/mx-button",
   "version": "1.0.5",
   "description": "React MxButton Component",
-  "author": "MaxiCorrea",
+  "author": {
+    "name": "MaxiCorrea"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_f14d021c9e409d2"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.10.2",
@@ -84,5 +87,9 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/MaxiCorrea/mx-button/issues"
+  },
+  "homepage": "https://github.com/MaxiCorrea/mx-button#readme"
 }
