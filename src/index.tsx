@@ -77,11 +77,11 @@ interface MxButtonProps {
    */
   readonly label?: string
   /**
-   * Variant of Button
+   * Types of variants available
    */
   readonly variant: Variant
   /**
-   * Size of Button
+   * Types of sizes available
    */
   readonly size: Size
 }
