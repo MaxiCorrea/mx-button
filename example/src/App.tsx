@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { MxButton } from 'mx-button'
+import { MxButton } from '@maxicorrea/mx-button'
 
 const App = () => {
   return (
