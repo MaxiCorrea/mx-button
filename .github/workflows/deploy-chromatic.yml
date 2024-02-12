@@ -13,7 +13,7 @@ jobs:
 
       - name: Install dependencies
       - run: npm ci
-      - run: pnpm install
+      #- run: pnpm install
       - run: yarn install --immutable --immutable-cache --check-cache
 
       - name: Publish to Chromatic
